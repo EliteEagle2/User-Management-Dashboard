@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <title>Aj3psv's Projects - Login</title>
+    <style>
+        header {
+            margin-top: 20px;
+        }
+        #card {
+            padding:40px;
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+    </style>
+  </head>
+  
+  <body>
+
+    <dialog id="successModal">
+        <article>
+            <header>
+            <button aria-label="Close" rel="prev" id="closeModal"></button>
+            <p><strong>Success</strong></p>
+            </header>
+            <p id= "successText"></p>
+            <footer>
+            <button id="okModal" type="button">OK</button>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="errorModal">
+        <article>
+            <header>
+            <button aria-label="Close" rel="prev" onclick="document.getElementById('errorModal').close()"></button>
+            <p><strong>Error</strong></p>
+            </header>
+            <p id = "errorText"></p>
+        </article>
+    </dialog>
+
+    <header class="container">
+        <article style="padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);">
+            <nav>
+                <ul>
+                    <li><a href="signup.html" class="secondary">Sign Up</a></li>
+                    <li><a href="login.html" class="secondary">Login</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Aj3psv's Project - Login</strong></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/EliteEagle2" class="secondary">GitHub</a></li>
+                    <li><a href="../index.html" class="secondary">Back To Main</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <main class="container">
+            <article id="card">
+                <h3>Login</h3>
+                <form id="submitForm">
+                    <input type="text" id="email" placeholder="Email" aria-label="Email" required>
+                    <input type="password" id="password" placeholder="Password" aria-label="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </article>
+    </main>
+    <hr>
+    <div style="display: flex; justify-content: center; align-items: center; font-size: 0.9rem; color: #555;">
+        <p>&copy; 2026 Austin Emig. All rights reserved.</p>
+    </div>
+    <script src="login.js?v=3"></script>
+  </body>
+</html>
